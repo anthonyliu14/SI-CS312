@@ -1,0 +1,60 @@
+1. How is a program ran / executed?
+2. Which of the following identifiers are valid?
+    a. I-LoVe-PuShEEn
+    b. i_LoVe_PusHeeN
+    c. $$Pusheen$$
+    d. _Pusheencute
+    e. 1LovePusheen
+    f. 1_LovePusheen
+    g. Pusheen+Me
+    h. pusheen.cute
+    i. pusheenIsCute
+    j. puHseeniscUTe
+3. From the valid identifiers in the previous questions, which of them are "recommended" to use? Be able to explain 
+your reasoning as to why one is good / why one isn't!
+
+
+
+
+
+
+4. Evaluate the following expressions:
+    a. 12 + "CS" + "\"" + 1 + "E"
+    b. 82617 / 1000 % 10 + 3 * 10 
+    c. 1.5 + 6 / 4 + 2.5
+    d. 117 % 100 + 2 * 100 * 3 % 50
+    e. 29 / 4 / 2.0 + 18 / 5 + 1.5
+    f. "UT" + "POP" + 3 * 5
+    g. 3 + 4 + "UT" + 5 + 6 + "POP" + 1 / 5
+    h. 3 * 2 + "C++" + 2 + 1
+    i. 1.5 * 3 / 2 + 2 * 3
+    j. 1 + 2 + "UT" + 2 + 1 
+5. Write a program that prints out “I wish we were good at football” 27 times. Make sure you use methods to make 
+your code less redundant: i.e do not print out “I wish we were good at football” with 27 println statements.
+6. Mike Scott has GACKED at the following code. Stylistcally, what's bad about it (what made him gack)?
+
+public class hello {
+
+	int a=19;
+public static void main(String[] args) {
+
+	}
+
+	public static void Multiply(int x, int y) {
+		System.out.println(x*y);
+	}
+
+// pusheen says hi wassup guys.
+public static void $$pusheensayshi$$(int x, int y) {
+  int sum = x-y;
+System.out.println(sum);
+  }
+	public static void printNumber {
+		  System.out.println(a);
+	}
+
+	  public static void printCircleArea(int diameter) {
+    System.out.println(3.14*diameter);
+	}
+
+    }

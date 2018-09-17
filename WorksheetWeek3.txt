@@ -1,0 +1,110 @@
+Evaluate the following expressions (Write the result):
+1. 69 % 420 + "" + (69 - 420)
+2. 7.0 / 2.0 + 13.0 / 10.0 - 1.0
+3. "CS" + 31.2 * 10 + "??"
+4. "val" + (2 * 1.5) + (6 % 2) 
+5. 25 / 8 + 12 / 7 + 21 / 6
+
+For the following for loops, how many asterisks does the following code print out? Don't show the output. Simply state
+the number of asterisks that are printed out when the code runs.
+
+for (int i = -5; i < 6; i++) { 
+	System.out.print("*"); 
+	for (int j = 0; j < 10; j++) { 
+		System.out.print("*"); 
+	} 
+}
+
+Expected # Asterisks: 
+
+
+for(int i = 0; i < 10; i++) { 
+	for(int j = 0; j < 7; j++) { 
+		System.out.print("*"); 
+	} 
+	for(int j = 1; j < 5; j++) { 
+		for (int k = 0; k < 10; k++) { 
+			System.out.print("*"); 
+		} 
+	}
+}
+
+Expected # Asterisks: 
+
+
+for (int i = 0; i < 5; i++) { 
+	System.out.print("*"); 
+	for (int j = 0; j < 10; j++) { 
+		System.out.print("*"); 
+		System.out.print("***"); 
+		System.out.print("**"); 
+	} 
+	System.out.print("**"); 
+}
+
+Expected # Asterisks: 
+
+
+What is output by the following code when it is run? 
+
+int total = 0; 
+for (int i = 0; i <= 4; i++) { 
+	for (int j = i; j >= 0; j--) { 
+		total = total + i; 
+	} 
+} 
+
+System.out.print(total);
+
+
+Expected Output: 
+
+
+What is the output of the following piece of Java code?
+
+int x = 4;
+int y = 2;
+int z = 0;
+x++;
+x = x * 5;
+y = y * 3 + x - 8;
+
+System.out.println("x is: " + x + " y is: " + y + "z is: " + z);
+
+x = z;
+y = 7;
+z = z * 5 + 3 - 23;
+
+System.out.println("x is: " + x + " y is: " + y);
+System.out.println("z is: " + z);
+
+
+
+Write a class called SlashFigure that uses a global constant for the figure's height that prints 
+out the following output:
+
+size 4:
+
+!!!!!!!!!!!!!!
+\\!!!!!!!!!!//
+\\\\!!!!!!////
+\\\\\\!!//////
+
+size 6:
+
+!!!!!!!!!!!!!!!!!!!!!!
+\\!!!!!!!!!!!!!!!!!!//
+\\\\!!!!!!!!!!!!!!////
+\\\\\\!!!!!!!!!!//////
+\\\\\\\\!!!!!!////////
+\\\\\\\\\\!!//////////
+
+size 7:
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+\\!!!!!!!!!!!!!!!!!!!!!!//
+\\\\!!!!!!!!!!!!!!!!!!////
+\\\\\\!!!!!!!!!!!!!!//////
+\\\\\\\\!!!!!!!!!!////////
+\\\\\\\\\\!!!!!!//////////
+\\\\\\\\\\\\!!////////////

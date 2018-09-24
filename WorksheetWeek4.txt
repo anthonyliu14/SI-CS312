@@ -1,0 +1,55 @@
+1. Which of the following is the correct syntax to draw a rectangle?
+	a) g.draw.rectangle(10, 20, 50, 30);
+	b) g.drawRect(x = 10, y = 20, width = 50, height = 30);
+	c) Graphics.drawRect(10, 20, 50, 30);
+	d) g.drawRect(10, 20, 50, 30);
+	e) Graphics g.drawRect(10, 20, 50, 30);
+
+2. Consider the following program:
+
+import java.awt.*;
+​
+public class Draw7 {
+    public static void main(String[] args) {
+        DrawingPanel panel = new DrawingPanel(200, 200);
+        Graphics g = panel.getGraphics();
+        for (int i = 0; i < 20; i++) {
+            g.drawOval(i * 10, i * 10, 200 - (i * 10), 200 - (i * 10));
+        }
+    }
+}
+
+What graphical output figure will be drawn by the Draw7 program (Draw the shape / pattern of it)?
+
+3. The following code attempts to draw a filled black outer rectangle with a white filled inner circle inside it:
+
+DrawingPanel panel = new DrawingPanel(200, 100);
+Graphics g = panel.getGraphics();
+g.setColor(Color.WHITE);
+g.fillOval(10, 10, 50, 50);
+g.setColor(Color.BLACK);
+g.fillRect(10, 10, 50, 50);
+
+However, it is incorrect. Find the mistakes and correct the code.
+
+
+4. Write a complete program in a class named MickeyBox that uses the DrawingPanel to draw the following figure (see image in github):
+
+The window is 220 pixels wide and 150 pixels tall. The background is yellow. There are two blue ovals of size 40 x 40 pixels. The left oval's top-left corner is located at position (50, 25), and the two ovals' top-left corners are 80 pixels apart horizontally. There is a red square whose top two corners exactly intersect the centers of the two ovals. Lastly, there is a black horizontal line through the center of the square.
+
+5. Write a method called printNumbers that accepts a maximum number as a parameter and prints each number from 1 up to that maximum, inclusive, boxed by square brackets. For example, consider the following calls:
+
+printNumbers(5);
+printNumbers(7);
+
+These calls should produce the following output:
+[1] [2] [3] [4] [5]
+[1] [2] [3] [4] [5] [6] [7]
+
+6. Write a method called printStrings that accepts a String and a number of repetitions as parameters and prints that String the given number of times. For example, the call:
+
+
+printStrings("abc", 5);
+will print the following output:
+
+abcabcabcabcabc

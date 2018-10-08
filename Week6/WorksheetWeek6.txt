@@ -1,0 +1,69 @@
+1) What is the output by the following code?
+
+String c1 = "gates4*dell";
+String c2 = c1.substring(4).toUpperCase().substring(1, 4);
+System.out.print(c2 + " " + c2.indexOf("A"));
+
+2) What is the output by the following code?
+
+String s2 = "YEE20";
+s2 = s2 + 12;
+foo(s2);
+System.out.print(s2);
+
+public static String foo(String s2) {
+	s2.substring(4);
+	s2 = 1 + 2 + s2;
+	System.out.print(s2 + " ");
+	return s2;
+}
+
+3) Given the following variable declarations:
+
+int x = 4;
+int y = -3;
+int z = 4;
+
+What are the results of the following relational expressions?
+
+x == 4
+x == y
+x == z
+y == z
+x + y > 0
+x - z != 0
+y * y <= z
+y / y == 1
+x * (y + 2) > y - (y + z) * 2
+
+4) Write a method called printTriangleType that accepts three integer arguments representing the lengths of the sides of a triangle and prints what type of triangle it is. The three types are equilateral, isosceles, and scalene. An equilateral triangle has all three sides the same length, an isosceles triangle has two sides the same length, and a scalene triangle has three sides of different lengths. Here are some example calls to printTriangleType:
+
+printTriangleType(5, 7, 7);
+printTriangleType(6, 6, 6);
+printTriangleType(5, 7, 8);
+printTriangleType(12, 18, 12);
+
+The output produced should be the following:
+
+isosceles
+equilateral
+scalene
+isosceles
+
+5) Write a method named smallestLargest that asks the user to enter numbers, then prints the smallest and largest of all the numbers typed in by the user. You may assume the user enters a valid number greater than 0 for the number of numbers to read. Here is an example dialogue:
+
+How many numbers do you want to enter? 4
+Number 1: 5
+Number 2: 11
+Number 3: -2
+Number 4: 3
+Smallest = -2
+Largest = 11
+
+6) Write a method called printReverse that accepts a String as its parameter and prints the characters in opposite order. For example, a call of printReverse("hello there!"); should print the following output:
+
+!ereht olleh
+
+If the empty string is passed, no output is produced. Your method should produce a complete line of output.
+
+7) Write a method called swapPairs that accepts a String as a parameter and returns that String with each pair of adjacent letters reversed. If the String has an odd number of letters, the last letter is unchanged. For example, the call swapPairs("example") should return "xemalpe" and the call swapPairs("hello there") should return "ehll ohtree".

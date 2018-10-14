@@ -1,0 +1,35 @@
+1) Given the following method:
+
+public static void mystery(int x) {
+    int y = 0;
+    while (x % 2 == 0) {
+        y++;
+        x = x / 2;
+    }
+    System.out.println(x + " " + y);
+}
+
+Write the output of each of the following calls.
+
+mystery(19);
+mystery(42);
+mystery(48);
+mystery(40);
+mystery(64);
+
+2) Are the two boolean expressions below logically equivalent? In other words given the same inputs do the two expressions always evaluate to the same boolean result? x, y, and z are int variables.
+
+Expression 1: (x < y) || (y == z)
+Expression 2: !((x < y) && (y != z))
+
+3) Given the following expression, how many of the 8 combinations of values for e1, e2, and e3 (all boolean variables) cause the expression to evaluate to false?
+
+(e1 || !e2) && e3
+
+4) Write a method named randomX that keeps printing lines, where each line contains a random number of x characters between 5 and 19 inclusive, until it prints a line with 16 or more characters. For example, the output from your method might be the following. Notice that the last line has 17 x characters.
+
+5) Write a method named consecutive that accepts three integers as parameters and returns true if they are three consecutive numbers; that is, if the numbers can be arranged into an order such that there is some integer k such that the parameters' values are k, k+1, and k+2. Your method should return false if the integers are not consecutive. Note that order is not significant; your method should return the same result for the same three integers passed in any order.
+
+For example, the calls consecutive(1, 2, 3), consecutive(3, 2, 4), and consecutive(-10, -8, -9) would return true. The calls consecutive(3, 5, 7), consecutive(1, 2, 2), and consecutive(7, 7, 9) would return false.
+
+6) Write a method named toBinary that accepts an integer as a parameter and returns a string of that number's representation in binary. For example, the call of toBinary(42) should return "101010".

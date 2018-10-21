@@ -1,0 +1,93 @@
+1. Consider the following method. For each of the four points labeled by comments
+and each of the four assertions in the table, write whether the assertion is always 
+true, sometimes true, or never true at that point in the code. Abbreviate always 
+with an A, sometimes with an S and never with an N.
+
+
+public static int assertionPractice(int a, int b) {
+	int result = -1;
+	// POINT A
+	if(a > 0 && b > 0) {
+		while(a != b) {
+			// POINT B
+			if(a > b) {
+				a -= b;
+			}
+			else {
+				b -= a;
+			}
+		}
+		result = a;
+		// POINT C
+	}
+	// POINT D
+	return result;
+}
+
+Abbreviate always with an A, sometimes with an S and never with an N.
+
+		| result == b |		b > a 	|		result == -1 	|	a == b |
+
+Point A |			  |				|						|		   |
+
+Point B |			  |				|						|		   |
+
+Point C |			  |				|						|		   |
+
+Point D |			  |				|						|		   |
+
+2. . Write a method tokensPerLine. The method has one parameter, a Scanner object.
+The Scanner is already connected to a file. The file contains at least one line. The method returns the average number of tokens (based on whitespace) per line.
+
+For example, if the Scanner object was connected to the following file,
+
+10 cat 20
+30
+50 20cat20
+cat
+dog 32
+
+then the method would return 1.5 (9 / 6).
+The given file contains 9 tokens (10, cat, 20, 30, 50, 20cat20, cat, dog, and 32)
+and has 6 lines. There is one blank line with no tokens between the line that 
+contains 30 and the line that contains 50 20cat20. You may only use Scanner objects
+and the constructors and methods from the Scanner class. You may not use any other 
+Java classes or methods in your answer. Write the complete method, including the 
+header, below:
+
+
+
+3. Write a method named evenNumbers that accepts a Scanner as a parameter reading 
+input from a file containing a series of integers, and report various statistics 
+about the integers. You may assume that there is at least one integer in the file. 
+Report the total number of numbers, the sum of the numbers, the count of even 
+numbers and the percent of even numbers. For example, if a Scannerinput on file 
+numbers.txt contains the following text:
+
+5 7 2 8 9 10 12 98 7 14 20 22
+
+then the call evenNumbers(input); should produce the following output:
+
+12 numbers, sum = 214
+8 evens (66.67%)
+
+
+4. Write a method named boyGirl that accepts a Scanner as a parameter. The Scanner 
+is reading its input from a file containing a series of names followed by integers. 
+The names alternate between boys' names and girls' names. Your method should 
+compute the absolute difference between the sum of the boys' integers and the sum 
+of the girls' integers. The input could end with either a boy or girl; you may not 
+assume that it contains an even number of names. If the input file tas.txt contains 
+the following text
+
+Steve 3 Sylvia 7 Craig 14 Lisa 13 Brian 4 Charlotte 9 Jordan 6
+
+then your method could be called in the following way:
+
+Scanner input = new Scanner(new File("tas.txt"));
+boyGirl(input);
+and should produce the following output, since the boys' sum is 27 and the girls' 
+sum is 29:
+
+4 boys, 3 girls
+Difference between boys' and girls' sums: 2

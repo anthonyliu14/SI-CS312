@@ -26,15 +26,15 @@ public static int assertionPractice(int a, int b) {
 
 Abbreviate always with an A, sometimes with an S and never with an N.
 
-		| result == b |		b > a 	|		result == -1 	|	a == b |
+		| result == b 	  |		b > a 		|		result == -1 	|	a == b 	   |
 
-Point A |			  |				|						|		   |
+Point A |			  |				|				|		   |
 
-Point B |			  |				|						|		   |
+Point B |			  |				|				|		   |
 
-Point C |			  |				|						|		   |
+Point C |			  |				|				|		   |
 
-Point D |			  |				|						|		   |
+Point D |			  |				|				|		   |
 
 2. . Write a method tokensPerLine. The method has one parameter, a Scanner object.
 The Scanner is already connected to a file. The file contains at least one line. The method returns the average number of tokens (based on whitespace) per line.
@@ -43,6 +43,7 @@ For example, if the Scanner object was connected to the following file,
 
 10 cat 20
 30
+
 50 20cat20
 cat
 dog 32

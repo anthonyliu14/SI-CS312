@@ -1,0 +1,70 @@
+1. When is "this" used? Is it implicit or explicit?
+
+2. Add the following method to the Point class:
+
+public double slope(Point other)
+
+Returns the slope of the line drawn between this Point and the given other Point. 
+Use the formula (y2 - y1) / (x2 - x1) to determine the slope between two points (
+x1, y1) and (x2, y2). Note that this formula fails for points with identical 
+x-coordinates, so throw an IllegalArgumentException in this case.
+
+
+public class Point {
+    private int x;
+    private int y;
+    
+    // // your code goes here
+    
+}
+
+3. Add the following method to the TimeSpan class:
+
+
+public void add(TimeSpan span)
+Adds the given amount of time to this time span.
+
+Recall the TimeSpan code from this chapter:
+
+
+public class TimeSpan {
+    private int hours;
+    private int minutes;
+    
+    public void add(int hours, int minutes) { ... }
+    public int getHours() { ... }
+    public int getMinutes() { ... }
+    public String toString() { ... }
+​
+    // // your code goes here
+    
+}
+
+4. Add the following method to the Point class:
+
+public int manhattanDistance(Point other)
+
+Returns the "Manhattan distance" between the current Point object and the given 
+other Point object. The Manhattan distance refers to how far apart two places are 
+if the person can only travel straight horizontally or vertically, as though 
+driving on the streets of Manhattan. In our case, the Manhattan distance is the sum 
+of the absolute values of the differences in their coordinates; in other words, the 
+difference in x plus the difference in y between the points.
+
+
+public class Point {
+    private int x;
+    private int y;
+    
+    // // your code goes here
+    
+}
+
+5. Add the following method to your Point class:
+
+public boolean isVertical(Point other)
+
+Returns true if the given Point lines up vertically with this Point; that is, if 
+their x coordinates are the same.
+
+Type your solution here:

@@ -1,0 +1,149 @@
+1. Consider the following classes:
+
+public class Vehicle {...}
+public class Car extends Vehicle {...}
+public class SUV extends Car {...}
+
+Which of the following are legal statements?
+
+Car c = new SUV();
+Car c = new Vehicle();
+Vehicle v = new SUV();
+SUV s = new Car();
+SUV s = new SUV();
+Vehicle v = new Car();
+
+
+2. Suppose that the following two classes have been declared:
+
+public class Car {
+    public void m1() {
+        System.out.println("car 1");
+    }
+​
+    public void m2() {
+        System.out.println("car 2");
+    }
+​
+    public String toString() {
+        return "vroom";
+    }
+}
+
+public class Truck extends Car {
+    public void m1() {
+        System.out.println("truck 1");
+    }
+     
+    public void m2() {
+        super.m1();
+    }
+     
+    public String toString() {
+        return super.toString() + super.toString();
+    }
+}
+Write a class MonsterTruck whose methods have the behavior below. Don't just print/return the output; whenever possible, use inheritance to reuse behavior from the superclass.
+
+Method	Output/Return
+m1			monster 1
+m2			truck 1
+			car 1 
+toString	"monster vroomvroom"
+
+3.  Consider these classes to answer the following questions:
+
+public class Room {
+	private int seats;
+
+	public Room(int s) { seats = s; }
+
+	public void expand() { seats += 5; }
+
+	public int getSeats() { return seats; }
+
+	public String toString() { return "room; " + seats; }
+}
+
+public class Meeting extends Room {
+	private boolean tele;
+
+	public Meeting(int s) { super(s); }
+
+	public void expand() { tele = true; }
+
+	public String toString() { return super.toString() + " " + tele; }
+}
+
+public class Classroom extends Room {
+	private int plugs;
+
+	public Classroom(int p, int s) {
+		super(s * 2);
+		plugs = p;
+	}
+
+	public void add(int p) {
+		plugs += p;
+		expand();
+		expand();
+	}
+}
+
+a: Consider the following statements. For each, circle if it is legal or if it 
+causes a syntax error.
+
+Object obj = Room();						// legal		syntax error
+Room r1 = new Classroom(10, 10);			// legal		syntax error
+
+Meeting m1 = new Object(5);					// legal		syntax error
+Meeting m2 = new Classroom(10, 10);			// legal		syntax error
+
+b: 
+Classroom c3 = new Classroom(10, 10);
+c3.add(2);
+System.out.print(c3);
+
+c:
+Room or = new Room(20);
+o(or);
+System.out.print(or);
+
+public static void o(Room r) {
+	r.expand();
+	r.expand();
+}  
+
+d:
+Room pr = new Room(20);
+p(pr);
+System.out.print(pr);
+
+public static void p(Room r) {
+	r.expand();
+	r = new Room(0);
+}
+
+e: 
+Room qr = new Room(10);
+qr.seats -= 5;
+System.out.print(qr.toString());
+
+f:
+Classroom cr1 = new Classroom(5, 5);
+Classroom cr2 = new Classroom(10, 10);
+cr2.expand();
+cr2 = cr1;
+cr1.expand();
+cr2.expand();
+System.out.print(cr1);
+
+g:
+Room cs = new Meeting(10);
+cs.expand();
+System.out.print(cs);
+
+h:
+Classroom ct1 = new CLassroom(25, 10);
+Classroom ct2 = new Classroom(25, 10);
+SYstem.out.print(ct1.toString().equals(ct2.toString()) + " " + ct1.equals(ct2));
